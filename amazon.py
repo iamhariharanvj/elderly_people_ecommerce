@@ -5,7 +5,7 @@ import time
 
 app = Flask(__name__)
 
-def scrape_amazon(keyword):
+def scrape(keyword):
     results = []
     driver = webdriver.Chrome()
     for page in range(1, 6):
